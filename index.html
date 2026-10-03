@@ -20,9 +20,12 @@
                     <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
                 </ul>
             </nav>
-            <div class="cart-icon">
-                <span id="cart-count">0</span>
-                🛒
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" title="تبديل الثيم">🌙</button>
+                <div class="cart-icon" onclick="openCart()">
+                    <span id="cart-count">0</span>
+                    🛒
+                </div>
             </div>
         </div>
     </header>
@@ -30,7 +33,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h2>مرحبا بك في مطعم جودة</h2>
+            <h2>مرحباً بك في مطعم جودة</h2>
             <p>ألذ الأطباق الشرقية والعالمية</p>
             <button class="btn-primary" onclick="document.getElementById('menu').scrollIntoView({ behavior: 'smooth' })">اطلب الآن</button>
         </div>
@@ -79,7 +82,7 @@
     <section class="about" id="about">
         <div class="container">
             <h2>عن مطعم جودة</h2>
-            <p>نحن نقدم أفضل الأطباق الشرقية والعالمية بجودة عالية وأسعار مناسبة. يعمل طاقمنا على توفير أفضل خدمة عملاء.</p>
+            <p>نحن نقدم أفضل الأطباق الشرقية والعالمية بجودة عالية وأسعار منافسة. يعمل طاقمنا على توفير أفضل خدمة عملاء.</p>
             <div class="about-grid">
                 <div class="about-card">
                     <h4>🏆 جودة عالية</h4>
@@ -90,7 +93,7 @@
                     <p>توصيل في 30 دقيقة</p>
                 </div>
                 <div class="about-card">
-                    <h4>💰 أسعار مناسبة</h4>
+                    <h4>💰 أسعار منافسة</h4>
                     <p>أفضل الأسعار في المدينة</p>
                 </div>
             </div>
@@ -107,12 +110,12 @@
                     <p>+966501234567</p>
                 </div>
                 <div class="contact-item">
-                    <h4>📍 العنوان</h4>
-                    <p>الرياض - شارع النيل</p>
-                </div>
-                <div class="contact-item">
                     <h4>📧 البريد الإلكتروني</h4>
                     <p>info@restaurant.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📍 العنوان</h4>
+                    <p>الرياض - شارع النيل</p>
                 </div>
                 <div class="contact-item">
                     <h4>🕐 ساعات العمل</h4>
