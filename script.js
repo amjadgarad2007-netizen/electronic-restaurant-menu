@@ -1,12 +1,12 @@
-// Menu Data
+// Menu Data with Real Image URLs
 const menuData = [
     {
         id: 1,
         name: 'الحمص',
-        description: 'حمص دافئ مع زيت الزيتون والليمون',
+        description: 'حمص دافئ مع زيت الزيتون واللياز',
         price: 15,
         category: 'appetizers',
-        emoji: '🥘'
+        image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop'
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ const menuData = [
         description: 'فلافل مقرمشة مع صلصة الطحينة',
         price: 12,
         category: 'appetizers',
-        emoji: '🍠'
+        image: 'https://images.unsplash.com/photo-1609867528936-e1e10c9dd96a?w=400&h=300&fit=crop'
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const menuData = [
         description: 'ورق عنب محشي بالأرز واللحم',
         price: 18,
         category: 'appetizers',
-        emoji: '🌿'
+        image: 'https://images.unsplash.com/photo-1596560473506-ad8a320ef305?w=400&h=300&fit=crop'
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ const menuData = [
         description: 'شاورما دجاج مشوية مع خضار وصلصة خاصة',
         price: 25,
         category: 'main',
-        emoji: '🍗'
+        image: 'https://images.unsplash.com/photo-1618164436241-92473c5a7b8f?w=400&h=300&fit=crop'
     },
     {
         id: 5,
@@ -38,7 +38,7 @@ const menuData = [
         description: 'شاورما لحم بقري مع ثوم وتوابل',
         price: 28,
         category: 'main',
-        emoji: '🥩'
+        image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=300&fit=crop'
     },
     {
         id: 6,
@@ -46,7 +46,7 @@ const menuData = [
         description: 'كباب ملكي مشوي مع أرز وسلطة',
         price: 32,
         category: 'main',
-        emoji: '🍢'
+        image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop'
     },
     {
         id: 7,
@@ -54,7 +54,7 @@ const menuData = [
         description: 'ستيك لحم بقري مع البطاطس المحمرة',
         price: 45,
         category: 'main',
-        emoji: '🥩'
+        image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop'
     },
     {
         id: 8,
@@ -62,7 +62,7 @@ const menuData = [
         description: 'سمك طازج مشوي مع ليمون وأعشاب',
         price: 35,
         category: 'main',
-        emoji: '🐟'
+        image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop'
     },
     {
         id: 9,
@@ -70,7 +70,7 @@ const menuData = [
         description: 'كنافة بالجبن والقشطة وشيرة السكر',
         price: 15,
         category: 'desserts',
-        emoji: '🍮'
+        image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop'
     },
     {
         id: 10,
@@ -78,7 +78,7 @@ const menuData = [
         description: 'بقلاوة بالفستق والعسل',
         price: 12,
         category: 'desserts',
-        emoji: '🥐'
+        image: 'https://images.unsplash.com/photo-1585518419759-ebb121f26e33?w=400&h=300&fit=crop'
     },
     {
         id: 11,
@@ -86,7 +86,7 @@ const menuData = [
         description: 'أم علي بالمكسرات والحليب',
         price: 10,
         category: 'desserts',
-        emoji: '🍛'
+        image: 'https://images.unsplash.com/photo-1617558679461-6daf67eb83de?w=400&h=300&fit=crop'
     },
     {
         id: 12,
@@ -94,7 +94,7 @@ const menuData = [
         description: 'شوكولاتة ساخنة غنية',
         price: 8,
         category: 'desserts',
-        emoji: '☕'
+        image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop'
     },
     {
         id: 13,
@@ -102,7 +102,7 @@ const menuData = [
         description: 'عصير برتقال طازج مركز',
         price: 6,
         category: 'drinks',
-        emoji: '🧃'
+        image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&h=300&fit=crop'
     },
     {
         id: 14,
@@ -110,7 +110,7 @@ const menuData = [
         description: 'عصير ليمون منعش مثلج',
         price: 5,
         category: 'drinks',
-        emoji: '🍋'
+        image: 'https://images.unsplash.com/photo-1570318051991-8a8fcccb0c68?w=400&h=300&fit=crop'
     },
     {
         id: 15,
@@ -118,7 +118,7 @@ const menuData = [
         description: 'قهوة عربية ساخنة',
         price: 4,
         category: 'drinks',
-        emoji: '☕'
+        image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?w=400&h=300&fit=crop'
     },
     {
         id: 16,
@@ -126,19 +126,51 @@ const menuData = [
         description: 'مشروب الرمان الطازج',
         price: 8,
         category: 'drinks',
-        emoji: '🍷'
+        image: 'https://images.unsplash.com/photo-1585518419759-ebb121f26e33?w=400&h=300&fit=crop'
     }
 ];
 
 // Global Variables
 let cart = [];
 let currentFilter = 'all';
+const themeToggle = document.getElementById('themeToggle');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     displayMenu(menuData);
     loadCart();
+    setupThemeToggle();
+    loadTheme();
 });
+
+// Theme Toggle Setup
+function setupThemeToggle() {
+    themeToggle.addEventListener('click', toggleTheme);
+}
+
+// Toggle Theme
+function toggleTheme() {
+    const isDarkMode = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    updateThemeButton(isDarkMode);
+}
+
+// Load Theme
+function loadTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDarkMode = savedTheme === 'dark' || (savedTheme === null && prefersDark);
+    
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+    }
+    updateThemeButton(isDarkMode);
+}
+
+// Update Theme Button
+function updateThemeButton(isDarkMode) {
+    themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+}
 
 // Display Menu
 function displayMenu(items) {
@@ -149,14 +181,16 @@ function displayMenu(items) {
         const menuItem = document.createElement('div');
         menuItem.className = 'menu-item';
         menuItem.innerHTML = `
-            <div class="menu-item-image">${item.emoji}</div>
+            <div class="menu-item-image" style="background-image: url('${item.image}')">
+                <span class="menu-item-category">${getCategoryName(item.category)}</span>
+            </div>
             <div class="menu-item-content">
                 <div class="menu-item-name">${item.name}</div>
                 <div class="menu-item-description">${item.description}</div>
                 <div class="menu-item-price">${item.price} ريال</div>
                 <div class="menu-item-actions">
                     <div class="quantity-control">
-                        <button class="quantity-btn" onclick="decreaseQuantity(${item.id})">-</button>
+                        <button class="quantity-btn" onclick="decreaseQuantity(${item.id})">−</button>
                         <input type="number" class="quantity-input" id="qty-${item.id}" value="1" min="1">
                         <button class="quantity-btn" onclick="increaseQuantity(${item.id})">+</button>
                     </div>
@@ -166,6 +200,17 @@ function displayMenu(items) {
         `;
         menuGrid.appendChild(menuItem);
     });
+}
+
+// Get Category Name
+function getCategoryName(category) {
+    const names = {
+        'appetizers': 'مقبلات',
+        'main': 'أطباق رئيسية',
+        'desserts': 'حلويات',
+        'drinks': 'مشروبات'
+    };
+    return names[category] || category;
 }
 
 // Filter Menu
@@ -233,6 +278,7 @@ function showNotification() {
         border-radius: 5px;
         z-index: 300;
         animation: slideIn 0.3s ease;
+        font-weight: bold;
     `;
     notification.textContent = '✓ تم الإضافة للسلة';
     document.body.appendChild(notification);
