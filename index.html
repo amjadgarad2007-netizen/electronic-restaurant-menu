@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم جودة - القائمة الإلكترونية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🍽️ مطعم جودة</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#menu" class="nav-link">القائمة</a></li>
+                    <li><a href="#about" class="nav-link">عن المطعم</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <span id="cart-count">0</span>
+                🛒
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>مرحبا بك في مطعم جودة</h2>
+            <p>ألذ الأطباق الشرقية والعالمية</p>
+            <button class="btn-primary" onclick="document.getElementById('menu').scrollIntoView({ behavior: 'smooth' })">اطلب الآن</button>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="filter-section">
+        <div class="container">
+            <h3>اختر الفئة</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterMenu('all')">الكل</button>
+                <button class="filter-btn" onclick="filterMenu('appetizers')">المقبلات</button>
+                <button class="filter-btn" onclick="filterMenu('main')">الأطباق الرئيسية</button>
+                <button class="filter-btn" onclick="filterMenu('desserts')">الحلويات</button>
+                <button class="filter-btn" onclick="filterMenu('drinks')">المشروبات</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>قائمتنا</h2>
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCart()">&times;</span>
+            <h2>سلة التسوق</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be inserted here -->
+            </div>
+            <div class="cart-total">
+                <h3>الإجمالي: <span id="total-price">0</span> ريال</h3>
+            </div>
+            <button class="btn-primary" onclick="checkout()">تأكيد الطلب</button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>عن مطعم جودة</h2>
+            <p>نحن نقدم أفضل الأطباق الشرقية والعالمية بجودة عالية وأسعار مناسبة. يعمل طاقمنا على توفير أفضل خدمة عملاء.</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h4>🏆 جودة عالية</h4>
+                    <p>أفضل المكونات الطازة</p>
+                </div>
+                <div class="about-card">
+                    <h4>⚡ توصيل سريع</h4>
+                    <p>توصيل في 30 دقيقة</p>
+                </div>
+                <div class="about-card">
+                    <h4>💰 أسعار مناسبة</h4>
+                    <p>أفضل الأسعار في المدينة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>📞 الهاتف</h4>
+                    <p>+966501234567</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📍 العنوان</h4>
+                    <p>الرياض - شارع النيل</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📧 البريد الإلكتروني</h4>
+                    <p>info@restaurant.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>🕐 ساعات العمل</h4>
+                    <p>10:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 مطعم جودة. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- Cart Button -->
+    <div class="cart-button" onclick="openCart()">
+        <span id="cart-badge">0</span>
+        🛒
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
